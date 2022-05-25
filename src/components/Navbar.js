@@ -1,30 +1,33 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 // import PropTypes from 'prop-types'
 
-let SwichDarkmode = console.log("Swich to dark mode");
 export class Navbar extends Component {
   // static PropTypes = {
   // }
   render() {
     return (
       <div>
-          <div className="navbar bg-base-100 bg-">
+        <div className="navbar bg-base-100 bg-">
           <div className="navbar-start">
             <div className="dropdown">
               <label tabIndex="0" className="btn btn-ghost btn-circle">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
               </label>
               <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a href='/'>Homepage</a></li>
-                <li><a href='About'>About</a></li>
-                <li><a href='Contact'>Contact us</a></li>
-                <div><input type="checkbox" className="toggle" onClick={SwichDarkmode}/></div>
+                <li><Link to='/'>Homepage</Link></li>
+                <li><Link to='/business'>business</Link></li>
+                <li><Link to='/entertainment'>entertainment</Link></li>
+                <li><Link to='/health'>health</Link></li>
+                <li><Link to='/science'>science</Link></li>
+                <li><Link to='/sports'>sports</Link></li>
+                <li><Link to='/technology'>technology</Link></li>
               </ul>
             </div>
           </div>
           <div className="navbar-center">
           </div>
-            <a href='/' className="btn btn-ghost normal-case text-xl text-blue-700 bg-[#ff1d7b5b]">NewsSanta</a>
+          <Link to='/' className="btn btn-ghost normal-case text-xl text-blue-700 bg-[#ff1d7b5b]">NewsSanta</Link>
           <div className="navbar-end">
             <button className="btn btn-ghost btn-circle">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
