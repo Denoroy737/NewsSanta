@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-// import PropTypes from 'prop-types'
 
 export class Navbar extends Component {
   // static PropTypes = {
@@ -16,12 +15,12 @@ export class Navbar extends Component {
               </label>
               <ul tabIndex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                 <li><Link to='/'>Homepage</Link></li>
-                <li><Link to='/business'>business</Link></li>
-                <li><Link to='/entertainment'>entertainment</Link></li>
-                <li><Link to='/health'>health</Link></li>
-                <li><Link to='/science'>science</Link></li>
-                <li><Link to='/sports'>sports</Link></li>
-                <li><Link to='/technology'>technology</Link></li>
+                <li><Link to='/technology'>Technology</Link></li>
+                <li><Link to='/entertainment'>Entertainment</Link></li>
+                <li><Link to='/business'>Business</Link></li>
+                <li><Link to='/health'>Health</Link></li>
+                <li><Link to='/science'>Science</Link></li>
+                <li><Link to='/sports'>Sports</Link></li>
               </ul>
             </div>
           </div>

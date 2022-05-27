@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 
 export class NewsItem extends Component {
     render() {
-        let {title, description,imageUrl, author ,articleUrl} = this.props
+        let {title, description,imageUrl, author ,articleUrl, date, source} = this.props
         return (
-                <div className="lg:p-4 md:w-1/3 flex justify-center my-2">
+                <div className="lg:p-4 md:w-1/3 flex justify-center my-2 ">
                         <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg"><img className="w-full" src={imageUrl} alt="hello jsx" />
-                            <div className="px-6 pt-4 "><span className="tracking-widest text-xs title-font font-medium text-slate-300 mb-1">{author}..</span>
-                                <div className="title-font text-lg font-medium text-gray-200 mb-3">{title}...</div>
+                            <div className="px-6 pt-4 "><span className="tracking-widest text-xs title-font font-medium text-slate-300 mb-1">By {!author?"Unknown": author} on {new Date (date).toGMTString()}</span>
+                                <div className="title-font text-lg font-medium text-gray-200 mb-3">{title} <div className="badge badge-secondary">{source}</div></div>
                                 <p className="text-gray-400 text-base">{description}...</p>
                             </div>
                             <div className="px-6 pt-4 mb-2"><a href={articleUrl}><span

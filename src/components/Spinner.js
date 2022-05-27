@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 export default class Spinner extends Component {
   render() {
     return (
-      <div>
-        <button className="btn btn-square loading"></button>
+      <div className='mx-auto my-3'>
+          <button className="btn btn-square loading"></button>
       </div>
     )
   }
